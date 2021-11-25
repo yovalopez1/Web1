@@ -1,0 +1,15 @@
+.fuente{
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.fondo{
+    background: rgb(224,71,31);
+    background: linear-gradient(90deg, rgba(224,71,31,1) 49%, rgba(219,174,26,1) 98%);
+}
+
+.fondobanner{
+    background-image: url("img/ima-hd-dragon-ball-super.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: top center;
+}
