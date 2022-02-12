@@ -3,8 +3,8 @@
 }
 
 .fondo{
-    background: rgb(224,71,31);
-    background: linear-gradient(90deg, rgba(224,71,31,1) 49%, rgba(219,174,26,1) 98%);
+    background: rgb(211, 211, 211);
+    background: linear-gradient(90deg, rgb(209, 209, 209) 49%, rgb(209, 209, 209) 98%);
 }
 
 .fondobanner{

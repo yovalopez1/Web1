@@ -24,22 +24,36 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Batallas</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">YouTube</a>
-                    </li>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Batallas</a>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item" href="">Frezer</a></li>
+                            <li><a class="dropdown-item" href="">Cel</a></li>
+                            <li><a class="dropdown-item" href="">Majin boo</a></li>
+                            <li><a class="dropdown-item" href="">Zamasu</a></li>
+                            <li><a class="dropdown-item" href="">Torneo del poder</a></li>
+                        </ul>
+                        </div>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Batallas</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="">Frezer</a></li>
+                                <li><a class="dropdown-item" href="">Cel</a></li>
+                                <li><a class="dropdown-item" href="">majin boo</a></li>
+                                <li><a class="dropdown-item" href="">zamasu</a></li>
+                                <li><a class="dropdown-item" href="">Torneo del poder</a></li>
+                            </ul>
+                    </li> -->
                     <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        PERSONAJES
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-dar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        CONOCE MAS</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item" href="views/tienda.html">Tienda</a></li>
+                            <li><a class="dropdown-item" href="views/acercade.html">Acerca De</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -52,7 +66,7 @@
     </header>
     <main>
         <section>
-            <img src="img/img_Goku_Y_Vegueta.webp" alt="Goku_Y_Vegueta" class="img-fluid w-100">
+            <img src="img/img_dragon-ball.jpg" alt="Figuras Dragon-ball" class="img-fluid w-100">
         </section>
         <div class="wow container my-3 animate__animated animate__backInUp">
             <div class="row d-flex justify-content-center">
@@ -73,27 +87,38 @@
         </div>
 
         <section>
-            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">REGISTRO</h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <div>
-                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                    </div>
-                    <div class="dropdown mt-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                        Dropdown button
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                        <div class="container">
+
+                            <img src="img/dragon-ball-form.jpg" alt="fotoform" class="w-100 img-fluid ">
+
+                            <form>
+                                <div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Correo</label>
+                                        <input type="email" class="form-control" id="cajaEmail">
+                                    </div>
+    
+                                    <div class="mb-3">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="cajaPassword">
+                                    </div>
+    
+                                    <button type="submit" class="btn btn-primary" id="botonregistro">Registrate</button>
+                                </div>
+                                
+                            </form>
+                        </div>
                     </div>
                 </div>
-                </div>
+            </div>
         </section>
 
             <section class="fondobanner">
@@ -141,6 +166,35 @@
             </section>
 
     </main>
+
+    <section>
+        <div class="modal fade" id="modallogin">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 id="mensajelogin">
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="bg-dark mt-4 p-3 text-white">
         <div class="container">
             <div class="row">
@@ -160,8 +214,11 @@
             </div>
         </div>
     </footer>
+    <script src="js/controlador.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/486a72e7e2.js" crossorigin="anonymous"></script>
+    <script src="js/firebase.js" type="module"></script>
+    <script src="js/registrarUsuario.js" type="module"></script>
     <script src="wow.min.js"></script>
             <script>
             new WOW().init();
