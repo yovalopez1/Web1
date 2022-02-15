@@ -86,7 +86,6 @@ export function verCarrito(carrito){
     let total = document.getElementById("total")
     let cont = 0
     total.addEventListener("click",function(){
-        //let cont = 0
         carrito.forEach(function(producto){
         cont = cont+Number(producto.precio*producto.cantidad)
         })
@@ -96,6 +95,6 @@ export function verCarrito(carrito){
     let usd = document.getElementById("usd")
     usd.addEventListener("click",function(){
         let dolar = cont/4000
-        usd.textContent = ("$")+Intl.NumberFormat("de-DE").format(dolar)
+        usd.textContent = ("$")+Intl.NumberFormat("de-DE").format(dolar)+("Usd")
     })
 }
