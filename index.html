@@ -29,30 +29,19 @@
                             Batallas</a>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                            <li><a class="dropdown-item" href="">Frezer</a></li>
-                            <li><a class="dropdown-item" href="">Cel</a></li>
-                            <li><a class="dropdown-item" href="">Majin boo</a></li>
-                            <li><a class="dropdown-item" href="">Zamasu</a></li>
-                            <li><a class="dropdown-item" href="">Torneo del poder</a></li>
+                            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=CjNe4_4oCh4" target="_blank">Frezer</a></li>
+                            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=pjLXMxbRZPM" target="_blank">Cel</a></li>
+                            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=hOgep7pRDTQ" target="_blank">Majin Boo</a></li>
+                            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=LgE45QwEJ24" target="_blank">Gokū Black</a></li>
+                            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=oF1KTMWFuvw" target="_blank">Torneo del Poder</a></li>
                         </ul>
                         </div>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Batallas</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="">Frezer</a></li>
-                                <li><a class="dropdown-item" href="">Cel</a></li>
-                                <li><a class="dropdown-item" href="">majin boo</a></li>
-                                <li><a class="dropdown-item" href="">zamasu</a></li>
-                                <li><a class="dropdown-item" href="">Torneo del poder</a></li>
-                            </ul>
-                    </li> -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-dar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         CONOCE MAS</a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                             <li><a class="dropdown-item" href="views/tienda.html">Tienda</a></li>
-                            <li><a class="dropdown-item" href="views/acercade.html">Acerca De</a></li>
+                            <!-- <li><a class="dropdown-item" href="views/acercade.html">Acerca De</a></li> -->
                         </ul>
                     </li>
                 </ul>
@@ -74,11 +63,19 @@
                     <img src="img/dragon-ball.jpg" alt="dragon-ball" class="img-fluid w-100">
                 </div>
                 <div class="col-12 col-md-4">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, blanditiis consectetur itaque vero eos molestias assumenda ad praesentium? Quis explicabo ipsam enim esse quibusdam, vel quia laudantium quod sed mollitia?
-                    </p>
-                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <h2 class="text-white-50">Dragon Ball</h2>
+                    <h4>
+                        <p class="text-white-50">
+                            Es un manga escrito e ilustrado por Akira Toriyama. Fue publicado originalmente en la revista Shōnen Jump, de la editorial "japonesa Shūeisha", entre 1984 y 1995.
+                        </p>
+                    </h4>
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" id="registrar">
                         Registrate
+                        <i class="fas fa-sign-in-alt"></i>
+                    </button>
+
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample2" aria-controls="offcanvasExample" id="iniciarsesion">
+                        Iniciar Sesion
                         <i class="fas fa-sign-in-alt"></i>
                     </button>
                 </div>
@@ -88,32 +85,31 @@
 
         <section>
             
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">REGISTRO</h5>
+                    <h5 class="offcanvas-title text-white-50" id="offcanvasExampleLabel">REGISTRO</h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <div>
                         <div class="container">
 
-                            <img src="img/dragon-ball-form.jpg" alt="fotoform" class="w-100 img-fluid ">
+                            <img src="img/super_shenlong.png" alt="fotoform" class="w-100 img-fluid mt-4"> 
 
                             <form>
                                 <div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Correo</label>
+                                    <div class="mb-4">
+                                        <label class="form-label text-white-50">Correo</label>
                                         <input type="email" class="form-control" id="cajaEmail">
                                     </div>
     
-                                    <div class="mb-3">
-                                        <label class="form-label">Password</label>
+                                    <div class="mb-4">
+                                        <label class="form-label text-white-50">Password</label>
                                         <input type="password" class="form-control" id="cajaPassword">
                                     </div>
     
-                                    <button type="submit" class="btn btn-primary" id="botonregistro">Registrate</button>
+                                    <button type="submit" class="btn btn-warning mt-4" id="botonregistro">Registrate</button>
                                 </div>
-                                
                             </form>
                         </div>
                     </div>
@@ -121,11 +117,59 @@
             </div>
         </section>
 
-            <section class="fondobanner">
+        <section>
+            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white-50" id="tituloIngreso">Iniciar sesion</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <div class="container">
+
+                            <img src="img/super_shenlong.png" alt="fotoform" class="w-100 img-fluid mt-4"> 
+
+                            <form>
+                                <div>
+                                    <div class="mb-4">
+                                        <label class="form-label text-white-50">Correo</label>
+                                        <input type="email" class="form-control" id="cajaEmail">
+                                    </div>
+    
+                                    <div class="mb-4">
+                                        <label class="form-label text-white-50">Password</label>
+                                        <input type="password" class="form-control" id="cajaContraseña">
+                                    </div>
+    
+                                    <button type="submit" class="btn btn-warning mt-4" id="botoniniciarsesion">Iniciar sesion</button>
+                                </div>
+                                
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <section class="fondobannerdb">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tempora labore eveniet! Molestias consequatur unde quisquam aliquid totam tempore natus expedita voluptas dolor repellat obcaecati nostrum modi dignissimos ipsa illo, adipisci odio. Consequuntur doloremque ipsa est quibusdam voluptatum provident molestias qui, odio neque dicta quaerat eos, voluptatem error dolorum dolores temporibus repellat repudiandae. Incidunt, ipsam sint recusandae saepe dicta, nemo provident accusamus exercitationem eos, aut sed expedita porro facere alias harum atque quisquam modi aperiam officiis deserunt voluptas neque itaque quae? Eos dolores inventore, corporis tempora soluta quia iste molestiae? Commodi, quam explicabo a maiores est earum itaque accusamus similique rerum sint delectus fugiat repudiandae voluptatum odio corrupti. Cumque repudiandae facilis eveniet mollitia? Tenetur quas nulla quibusdam mollitia perferendis incidunt dignissimos iste doloremque officia quod optio ducimus fugiat ratione earum, nostrum nesciunt facilis facere expedita suscipit culpa. Vitae, debitis! Repellendus iure quos iusto deleniti voluptas nesciunt ullam voluptate maxime doloribus, magnam delectus, explicabo quam eveniet quo temporibus rerum odit placeat itaque atque totam, aut quas eos neque! Hic itaque assumenda reiciendis nisi voluptatibus natus veritatis quos sequi magnam et enim dignissimos in, ullam ab provident asperiores, ut dolore. Quia libero id cupiditate laboriosam eum nesciunt eius saepe ipsam beatae dolorum.</p>
+                        <div class="col-6">
+                            <h5 class="text-black">
+                                <p>Su trama describe las aventuras de Gokū, un guerrero saiyajin, cuyo fin es proteger a la Tierra de otros seres que quieren conquistarla y exterminar a la humanidad. Conforme transcurre la trama, conoce a otros personajes que le ayudan en este propósito. El nombre de la serie proviene de unas esferas mágicas que al ser reunidas invocan a un dragón que concede deseos. En varias ocasiones resultan útiles tanto para Gokū y sus amigos como para la humanidad, aunque también son procuradas de forma constante por algunos seres malignos. <br>
+                                El manga tuvo 519 capítulos impresos recopilados en 42 volúmenes tankōbon. Dos años después de su lanzamiento, Toei Animation estrenó una adaptación anime que abarcó aproximadamente la primera mitad de la obra. Una vez concluida su transmisión en 1989 por el canal Fuji Television en Japón, Toei estrenó una continuación titulada Dragon Ball Z, la cual incorporó el contenido restante del manga. Un tercer anime producido por el mismo estudio se estrenó en 1996. Denominado Dragon Ball GT, posee un argumento inédito en cuya redacción no participó Toriyama. <br>
+                                En 2015 comenzó a emitirse Dragon Ball Super en Fuji Television, anime que continúa los sucesos de Dragon Ball Z y que cuenta con una adaptación al manga, publicada a partir de junio del mismo año en Shōnen Jump. La violencia y desnudez presentes en algunos episodios tanto del anime como del manga provocaron la censura por parte de las distribuidoras en distintos países. 
+                                </p>
+                            </h5>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="text-black">
+                                <p>
+                                    
+                                    Las ventas del material impreso, cuantificadas en más de 160 millones de copias vendidas en Japón6 y de 300 millones a nivel mundial, llevaron a Dragon Ball a ser uno de los títulos más exitosos de Shūeisha. Las adaptaciones anime también consiguieron un éxito notable; en 1999, por ejemplo, uno de sus capítulos logró un récord de audiencia en EE. UU. en la cadena Cartoon Network, con 1.7 millones de televidentes. Dragon Ball es considerada como una de las obras más influyentes y populares de la época contemporánea, y ha servido de inspiración para otros mangakas como Eiichirō Oda, Masashi Kishimoto, Tite Kubo e Hiro Mashima, creadores de One Piece, Naruto, Bleach y Fairy Tail, respectivamente. Existe una franquicia de productos sobre el universo creado por Toriyama, que incluye películas animadas y de imágenes reales, animaciones originales, videojuegos, cartas coleccionables, figuras de acción y juguetes, entre otros.
+                                </p>
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -136,28 +180,28 @@
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/img_Gogeta.jpg" class="card-img-top" alt="Foto1">
+                                <img src="img/Guerreros-Z.jpg" class="card-img-top" alt="Foto1">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <h5 class="card-title">Guerreros-Z</h5>
+                                    <p class="card-text">Los Guerreros Z, son un grupo de guerreros que luchan contra los villanos y vándalos en el mundo en Dragon Ball.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <h5 class="card-title">Vegitto Blue</h5>
+                                    <p class="card-text">Vegito, llamado Vegerot en el manga Viz English, es la fusión resultante entre Goku y Vegeta mediante el uso de los Pendientes Potara. Al igual que su homólogo de Fusion Dance, Gogeta, Vegito es considerado el personaje más poderoso del manga original de Dragon Ball.</p>
                                     <img src="img/vegitto_blue.png" class="card-img-top" alt="Foto1">
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card h-100">
-                                <img src="img/Img_Ultra-Mega-Instinto.jpg" class="card-img-top" alt="Foto1">
+                                <img src="img/Peleadores-torneo-Poder.jpg" class="card-img-top" alt="Foto1">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <h5 class="card-title">Peleadores torneo del Poder</h5>
+                                    <p class="card-text">El Torneo de la Fuerza, también conocido como el Torneo de Fuerza o Torneo del Poder, es un torneo de supervivencia confeccionado por los Reyes de Todo y preparado por el Gran Sacerdote. El torneo consiste en una batalla campal entre ocho equipos (80 luchadores) de distintos universos, donde se prueba la fuerza de los participantes en general.</p>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +216,7 @@
             <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Texto importante</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -195,21 +239,60 @@
         </div>
     </section>
 
-    <footer class="bg-dark mt-4 p-3 text-white">
+
+    <section>
+        <div class="modal fade" id="modaliniciarsesion">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Informacion de inicio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 id="mensajeinicio">
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-4 p-3 bg-gradient">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 text-white-50">
+                    <img src="img/yo.jpeg" class="card-img-top"/>
+                    <p class="text-center">Jovany López Zapata &copy;</p>
+                </div>
+                <div class="col-12 col-md-4 text-white-50">
+                    <p class="text-white-50 mt-5">Soy un Desarrollador que se inclina mas por el back-end con 6 meses de experiencia academica, que se prepara de la mejor manera en el boot-camp de globant. Estudiante de desarrollo de sofware y proximamente Tecnico de cesde e ingeniero inforatico del politecnico jaime isaza cadavis. Creador de este sitio web, construido con buenas prácticas. &copy;</p>
                     <p>Jovany Lopez Zapata &copy;</p>
                     <p>medellin-colombia</p>
-                    <p>2021</p>
+                    <p>2022</p>
+                    <div class="text-center">
+                        <img src="img/globant.jpg" class="img-footer"/>
+                    </div>
+                    
                 </div>
-                <div class="col-12 col-md-4">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam numquam harum saepe labore sed delectus laudantium porro vitae unde sunt, animi consequuntur libero reprehenderit sit nam, accusamus maiores aliquid enim culpa expedita. Alias architecto eius sapiente expedita ab, illo velit, quaerat, ipsum aspernatur culpa odit. Provident impedit officiis ea quidem! &copy;</p>
-                </div>
-                <div class="col-12 col-md-4">
-                    <p>Jovany Lopez Zapata &copy;</p>
-                    <p>medellin-colombia</p>
-                    <p>2021</p>
+                <div class="col-12 col-md-4 text-white-50 mt-5">
+                    <ul class="mt-5">
+                        <br>
+                        <li class="mt-5">Facebock: @DragonBallZ  <i class="fa-brands fa-facebook-f"></i></li>
+                        <li class="mt-5">instagram: @dballzlatino    <i class="fa-brands fa-instagram"></i></li>
+                        <li class="mt-5">Twitter: @dragonballz   <i class="fa-brands fa-twitter"></i></li>
+                        <li class="mt-5">twitch: Dragon Ball FighterZ    <i class="fa-brands fa-twitch"></i></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -219,6 +302,7 @@
     <script src="https://kit.fontawesome.com/486a72e7e2.js" crossorigin="anonymous"></script>
     <script src="js/firebase.js" type="module"></script>
     <script src="js/registrarUsuario.js" type="module"></script>
+    <script src="js/iniciarsesion.js" type="module"></script>
     <script src="wow.min.js"></script>
             <script>
             new WOW().init();

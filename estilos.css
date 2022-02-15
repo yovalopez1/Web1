@@ -3,13 +3,29 @@
 }
 
 .fondo{
-    background: rgb(211, 211, 211);
-    background: linear-gradient(90deg, rgb(209, 209, 209) 49%, rgb(209, 209, 209) 98%);
+    background: rgb(34, 32, 32);
+    background: linear-gradient(90deg, rgb(24, 22, 22) 49%, rgb(34, 31, 31) 98%);
 }
 
 .fondobanner{
-    background-image: url("img/ima-hd-dragon-ball-super.jpg");
+    background-image: url("img/Dragon-Ball_fondo1.jpg");
     height: 600px;
     background-attachment: fixed;
     background-position: top center;
+}
+
+.fondobannerdb{
+    background-image: url("img/Goku-nube-voladora-dragon-ball.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: top center;
+}
+
+.img-footer{
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: 60%;
+    border-radius: 60%;
+    background-size: 100% auto;
 }
